@@ -17,13 +17,10 @@ func setup(c *caddy.Controller) error {
 	a := New()
     // why
 	for c.Next() {
-		// shift cursor past alternate
+		// shift cursor past retry
 		if !c.Next() {
 			return c.ArgErr()
 		}
-    // shift cursor past alternate
-	//c.Next() 
-
 		var (
 			original bool
 			rcodes   []int
@@ -44,7 +41,7 @@ func setup(c *caddy.Controller) error {
 			}
 		}
 
-		handler, err := initForward(c)
+		handler, err := initFanout(c)
 		if err != nil {
 			return plugin.Error("retry", err)
 		}
@@ -57,7 +54,7 @@ func setup(c *caddy.Controller) error {
 			a.original = true
 		}
 	}
-
+//what ?
 	dnsserver.GetConfig(c).AddPlugin(func(next plugin.Handler) plugin.Handler {
 		a.Next = next
 		return a
