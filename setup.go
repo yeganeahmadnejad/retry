@@ -6,26 +6,23 @@ import (
 
 	"github.com/coredns/coredns/core/dnsserver"
 	"github.com/coredns/coredns/plugin"
-
 	"github.com/coredns/caddy"
 	"github.com/miekg/dns"
 )
 
-func init() {
-	caddy.RegisterPlugin("retry", caddy.Plugin{
-		ServerType: "dns",
-		Action:     setup,
-	})
-}
+func init() { plugin.Register("retry", setup) }
+
 
 func setup(c *caddy.Controller) error {
 	a := New()
-
+    // why
 	for c.Next() {
 		// shift cursor past alternate
 		if !c.Next() {
 			return c.ArgErr()
 		}
+    // shift cursor past alternate
+	//c.Next() 
 
 		var (
 			original bool
