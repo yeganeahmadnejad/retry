@@ -6,7 +6,7 @@ require (
 	github.com/coredns/caddy v1.1.1
 	github.com/coredns/coredns v1.8.6
 	github.com/miekg/dns v1.1.45
-	github.com/networkservicemesh/fanout v0.0.0-20211017065114-818e3247f257
+	github.com/yeganeahmadnejad/fanout v0.0.0-20220103071727-0563c3220199
 	golang.org/x/net v0.0.0-20211216030914-fe4d6282115f
 )
 

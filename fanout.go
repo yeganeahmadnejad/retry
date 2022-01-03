@@ -5,14 +5,13 @@ import (
 
 	"github.com/coredns/caddy"
 	"github.com/coredns/coredns/plugin/pkg/parse"
-	"github.com/networkservicemesh/fanout"
+	"github.com/yeganeahmadnejad/fanout"
 	"github.com/coredns/coredns/plugin/pkg/transport"
 
 )
 
 func initFanout(c *caddy.Controller) (*fanout.Fanout, error) {
 	f := fanout.New()
-
 	from := "."
 
 	if !c.Args(&from) {
@@ -37,7 +36,8 @@ func initFanout(c *caddy.Controller) (*fanout.Fanout, error) {
 	    if trans != transport.DNS {
 	    return f, fmt.Errorf("only dns transport allowed")
 		}
-		fanout.NewClient(h, trans)
+		client:=fanout.NewClient(h, trans)
+		f.AddClient(client)
 
 	}
 	return f, nil
