@@ -4,18 +4,17 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/coredns/caddy"
 	"github.com/coredns/coredns/core/dnsserver"
 	"github.com/coredns/coredns/plugin"
-	"github.com/coredns/caddy"
 	"github.com/miekg/dns"
 )
 
 func init() { plugin.Register("retry", setup) }
 
-
 func setup(c *caddy.Controller) error {
 	a := New()
-    // why
+	// why
 	for c.Next() {
 		// shift cursor past retry
 		if !c.Next() {
@@ -54,7 +53,7 @@ func setup(c *caddy.Controller) error {
 			a.original = true
 		}
 	}
-//what ?
+	//what ?
 	dnsserver.GetConfig(c).AddPlugin(func(next plugin.Handler) plugin.Handler {
 		a.Next = next
 		return a

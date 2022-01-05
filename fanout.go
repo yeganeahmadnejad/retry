@@ -5,9 +5,8 @@ import (
 
 	"github.com/coredns/caddy"
 	"github.com/coredns/coredns/plugin/pkg/parse"
-	"github.com/yeganeahmadnejad/fanout"
 	"github.com/coredns/coredns/plugin/pkg/transport"
-
+	"github.com/yeganeahmadnejad/fanout"
 )
 
 func initFanout(c *caddy.Controller) (*fanout.Fanout, error) {
@@ -33,10 +32,10 @@ func initFanout(c *caddy.Controller) (*fanout.Fanout, error) {
 	}
 	for _, host := range toHosts {
 		trans, h := parse.Transport(host)
-	    if trans != transport.DNS {
-	    return f, fmt.Errorf("only dns transport allowed")
+		if trans != transport.DNS {
+			return f, fmt.Errorf("only dns transport allowed")
 		}
-		client:=fanout.NewClient(h, trans)
+		client := fanout.NewClient(h, trans)
 		f.AddClient(client)
 
 	}
