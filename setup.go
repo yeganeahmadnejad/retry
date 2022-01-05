@@ -54,7 +54,19 @@ func setup(c *caddy.Controller) error {
 		}
 	}
 fmt.Println("a is : ")
-fmt.Println(a)
+fmt.Println(*a)
+fmt.Println(&a.handlers)
+fmt.Println(&a.rules)
+
+fmt.Println(a.handlers)
+fmt.Println(a.rules)
+fmt.Println(a.original)
+fmt.Println(a.Next)
+fmt.Println(a.Name())
+fmt.Println(a.Next.Name())
+
+
+
 	dnsserver.GetConfig(c).AddPlugin(func(next plugin.Handler) plugin.Handler {
 		a.Next = next
 		return a
