@@ -548,8 +548,6 @@ github.com/tmc/grpc-websocket-proxy v0.0.0-20170815181823-89b8d40f7ca8/go.mod h1
 github.com/urfave/cli v1.20.0/go.mod h1:70zkFmudgCuE/ngEzBv17Jvp/497gISqfk5gWijbERA=
 github.com/urfave/cli v1.22.1/go.mod h1:Gos4lmkARVdJ6EkW0WaNv/tZAAMe9V7XWyB60NtXRu0=
 github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2/go.mod h1:UETIi67q53MR2AWcXfiuqkDkRtnGDLqkBTpCHuJHxtU=
-github.com/yeganeahmadnejad/fanout v0.0.0-20220105114922-78df6fba59d9 h1:auqitwDw9hUDL8ANttk+PYBjIX3w/mDhRBqq2ZgxsEw=
-github.com/yeganeahmadnejad/fanout v0.0.0-20220105114922-78df6fba59d9/go.mod h1:3icbqaEUjFMFH+m+0ZCIhqyx0tlDs40kZmSgLyM7R+g=
 github.com/yeganeahmadnejad/fanout v0.0.0-20220105120505-675d9903f531 h1:nmFu2dE6IIFrxkHde4ouTImZowHpzP3Tl6rdUBTl4Ow=
 github.com/yeganeahmadnejad/fanout v0.0.0-20220105120505-675d9903f531/go.mod h1:3icbqaEUjFMFH+m+0ZCIhqyx0tlDs40kZmSgLyM7R+g=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
