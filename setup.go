@@ -44,6 +44,10 @@ func setup(c *caddy.Controller) error {
 		if err != nil {
 			return plugin.Error("retry", err)
 		}
+		fmt.Println("handlerrrr")
+
+		fmt.Println(handler)
+
 		a.handlers = append(a.handlers, handler)
 
 		for _, rcode := range rcodes {
@@ -61,7 +65,9 @@ fmt.Println("rules is",a.rules)
 fmt.Println(a.original)
 fmt.Println(a.Next)
 fmt.Println(a.Name())
+
 for i := range a.handlers {
+
 	p := a.handlers[i]
 	fmt.Println("handler name :",p.Name()) 
 }
