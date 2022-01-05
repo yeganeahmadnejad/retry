@@ -53,9 +53,7 @@ func setup(c *caddy.Controller) error {
 			a.original = true
 		}
 	}
-	fmt.Println("a is")
-	fmt.Println(a)
-	//what ?
+
 	dnsserver.GetConfig(c).AddPlugin(func(next plugin.Handler) plugin.Handler {
 		a.Next = next
 		return a
@@ -70,7 +68,7 @@ func setup(c *caddy.Controller) error {
 		return nil
 	})
 
-	return nil
+	return fmt.Errorf("%v",a)
 }
 
 const original = "original"
