@@ -53,7 +53,7 @@ func setup(c *caddy.Controller) error {
 			a.original = true
 		}
 	}
-fmt.Println("a is : ")
+fmt.Println("a isss : ")
 fmt.Println(*a)
 fmt.Println(&a.handlers)
 fmt.Println(&a.rules)
