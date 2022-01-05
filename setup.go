@@ -69,6 +69,8 @@ fmt.Println(a.Name())
 for i := range a.handlers {
 
 	p := a.handlers[i]
+	fmt.Println("handlerrrr is : ")
+	fmt.Println(p)
 	fmt.Println("handler name :",p.Name()) 
 }
 for i := range a.rules {
