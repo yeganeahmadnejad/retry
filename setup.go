@@ -54,16 +54,13 @@ func setup(c *caddy.Controller) error {
 		}
 	}
 fmt.Println("a isss : ")
-fmt.Println(*a)
-fmt.Println(&a.handlers)
-fmt.Println(&a.rules)
 
-fmt.Println(a.handlers)
-fmt.Println(a.rules)
+
+fmt.Println("handler is",a.handlers)
+fmt.Println("rules is",a.rules)
 fmt.Println(a.original)
 fmt.Println(a.Next)
 fmt.Println(a.Name())
-fmt.Println(a.Next.Name())
 
 
 
