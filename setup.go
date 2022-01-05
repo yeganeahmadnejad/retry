@@ -76,7 +76,7 @@ for i := range a.handlers {
 for i := range a.rules {
 	p := a.rules[i]
 	fmt.Println("handler name in rule:",p.handler) 
-	fmt.Println("handler name in rule:",p.handler.Name()) 
+	fmt.Println("handler name in rule:",p.handler.Name())  
 
 }
 
