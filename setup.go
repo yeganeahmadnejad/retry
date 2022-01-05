@@ -61,8 +61,16 @@ fmt.Println("rules is",a.rules)
 fmt.Println(a.original)
 fmt.Println(a.Next)
 fmt.Println(a.Name())
+for i := range a.handlers {
+	p := a.handlers[i]
+	fmt.Println("handler name :",p.Name()) 
+}
+for i := range a.rules {
+	p := a.rules[i]
+	fmt.Println("handler name in rule:",p.handler) 
+	fmt.Println("handler name in rule:",p.handler.Name()) 
 
-
+}
 
 	dnsserver.GetConfig(c).AddPlugin(func(next plugin.Handler) plugin.Handler {
 		a.Next = next
