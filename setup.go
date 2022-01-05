@@ -8,6 +8,8 @@ import (
 	"github.com/coredns/coredns/core/dnsserver"
 	"github.com/coredns/coredns/plugin"
 	"github.com/miekg/dns"
+	"github.com/kr/pretty"
+
 )
 
 func init() { plugin.Register("retry", setup) }
@@ -57,8 +59,11 @@ func setup(c *caddy.Controller) error {
 			a.original = true
 		}
 	}
-fmt.Println("a is: ")
+	fmt.Println("a is prety: ")
 
+	pretty.Print(a)
+
+fmt.Println("a is: ")
 
 fmt.Println("handler is",a.handlers)
 fmt.Println("rules is",a.rules)
