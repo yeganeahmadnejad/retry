@@ -46,9 +46,6 @@ func setup(c *caddy.Controller) error {
 		if err != nil {
 			return plugin.Error("retry", err)
 		}
-		fmt.Println("handlerrrr")
-
-		fmt.Println(handler)
 
 		a.handlers = append(a.handlers, handler)
 
