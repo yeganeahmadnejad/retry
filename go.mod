@@ -7,7 +7,7 @@ require (
 	github.com/coredns/coredns v1.8.6
 	github.com/kr/pretty v0.3.0
 	github.com/miekg/dns v1.1.45
-	github.com/yeganeahmadnejad/fanout v0.0.0-20220105154058-526e238d7d90
+	github.com/yeganeahmadnejad/fanout v0.0.0-20220109065512-42a4fcccf2ff
 	golang.org/x/net v0.0.0-20220107192237-5cfca573fb4d
 )
 
