@@ -379,8 +379,8 @@ github.com/stretchr/testify v1.6.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/
 github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5CcY=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/tinylib/msgp v1.1.2/go.mod h1:+d+yLhGm8mzTaHzB+wgMYrodPfmZrzkirds8fDWklFE=
-github.com/yeganeahmadnejad/fanout v0.0.0-20220109090849-4060b7bad6b4 h1:XNuVuHqxt1Rpp9DvtAdDg9sB2y6fYC5HTkow2STsN3k=
-github.com/yeganeahmadnejad/fanout v0.0.0-20220109090849-4060b7bad6b4/go.mod h1:RhvYKYzLjOvgp3OWSEgFWwINclXhc57sv3ko1j1xveI=
+github.com/yeganeahmadnejad/fanout v0.0.0-20220109093227-1a23cb6c13a8 h1:sEdSOg+bcfNQzr7fg7727p/vGvdUzaFUpYv3yODnVn4=
+github.com/yeganeahmadnejad/fanout v0.0.0-20220109093227-1a23cb6c13a8/go.mod h1:RhvYKYzLjOvgp3OWSEgFWwINclXhc57sv3ko1j1xveI=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.32/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
