@@ -37,7 +37,7 @@ func initFanout(c *caddy.Controller) (*fanout.Fanout, error) {
 		if trans != transport.DNS {
 			return f, fmt.Errorf("only dns transport allowed")
 		}
-		client := fanout.NewClient(h, trans)
+		client := fanout.NewClient(h, "udp")
 		f.AddClient(client)
 
 	}
