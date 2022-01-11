@@ -31,12 +31,12 @@ func initFanout(c *caddy.Controller) (*fanout.Fanout, error) {
 	}
 	//set default value
 	net := "udp"
-	for c.NextBlock() {
+	if c.NextBlock(){
 		if strings.ToLower(c.Val()) == "network" {
-			// shift cursor past network
-			if !c.Next() {
-				return f, c.ArgErr()
-			}
+			// // shift cursor past network
+			// if !c.Next() {
+			// 	return f, c.ArgErr()
+			// }
 			net, err = parseProtocol(c)
 			if err != nil {
 				return f, err
