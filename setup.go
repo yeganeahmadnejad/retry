@@ -8,7 +8,7 @@ import (
 	"github.com/coredns/coredns/core/dnsserver"
 	"github.com/coredns/coredns/plugin"
 	"github.com/miekg/dns"
-	//"github.com/kr/pretty"
+	"github.com/kr/pretty"
 
 )
 
@@ -56,9 +56,9 @@ func setup(c *caddy.Controller) error {
 			a.original = true
 		}
 	}
-	//fmt.Println("a is prety: ")
+	fmt.Println("a is prety: ")
 
-	//pretty.Print(a)
+	pretty.Print(a)
 
 
 	dnsserver.GetConfig(c).AddPlugin(func(next plugin.Handler) plugin.Handler {
