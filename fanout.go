@@ -49,9 +49,9 @@ func initFanout(c *caddy.Controller) (*fanout.Fanout, error) {
 
 	}
 
-	// for c.NextBlock() {
-	// 	return f, fmt.Errorf("additional parameters not allowed")
-	// }
+	for c.NextBlock() {
+		return f, fmt.Errorf("additional parameters not allowed")
+	}
 	for _, host := range toHosts {
 		trans, h := parse.Transport(host)
 		if trans != transport.DNS {
